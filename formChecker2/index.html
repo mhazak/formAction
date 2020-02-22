@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Form checker</title>
+</head>
+<body>
+<form action="index.php" method="post">
+Meno <input type="text" name="meno" pattern="[a-zA-Z]+" required>
+Priezvisko <input type="text" name="priezvisko" pattern="[a-zA-Z]+" required>
+E-mail <input type="email" name="em" required>
+Rodne cislo <input type="text" name="rc"  pattern="[0-9/]{11}" required>
+Datum Narodenia <input type="date" name="datum" required>
+<input type="submit">
+</form>
+</body>
+</html>
